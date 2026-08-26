@@ -1,0 +1,83 @@
+body{
+    
+    color: white;
+    font-family: cursive;
+}
+
+.video-fundo {
+  position: fixed;    /* Fixa o vídeo na tela, mesmo se rolar a página */
+  top: 0;
+  left: 0;
+  width: 100vw;       /* Ocupa 100% da largura da tela */
+  height: 150vh;      /* Ocupa 100% da altura da tela */
+  object-fit: cover;  /* Faz o vídeo preencher a tela sem esticar ou achatar */
+  z-index: -1;        /* O número negativo joga o vídeo para trás de tudo */
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 7px ridge rgb(162, 18, 18);
+    border-radius: 30px;
+    padding: 20px;
+    overflow: hidden;
+    cursor: crosshair;
+}
+.classe{
+    color: red;
+    font-size: 20px;
+}
+
+p{
+    font-size: 10px;
+    color: rgb(0, 255, 229);
+}
+
+#id{
+    color: darkblue;
+    text-align: right;
+    font-size: 30px;
+}
+
+.dropdown{
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    color: black;
+    background-color: bisque;
+    min-width: 130px;
+    box-shadow: 3px 5px 0px 0px rgb(252, 252, 252);
+    cursor:-webkit-zoom-out;
+}
+
+.dropdown:hover .dropdown-content{
+    display: flex;
+}
+
+.gay{
+    font-weight: bold;
+    background: linear-gradient(45deg,  #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: mover-degrade 8s ease infinite;
+}
+
+@keyframes mover-degrade {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.mesmalinha{
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+}
